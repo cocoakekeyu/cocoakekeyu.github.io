@@ -23,13 +23,14 @@ cd ~/.vim/bundle/YouCompleteMe
 
 
 编译的时候:
+
 1. 提示“CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found. ”
-    
-        最近刚装系统，还没有编译器，去下载了g++，`sudo apt-get install g++-4.8`
+
+    最近刚装系统，还没有编译器，去下载了g++，`sudo apt-get install g++-4.8`
 
 2. 提示“CMake Error at /usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake:108 (message):
           Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS)”
 
-貌似找不的python库，上网查了一下，下载最新的python版本，`sudo apt-get install python-dev`
+    貌似找不的python库，上网查了一下，下载最新的python版本，`sudo apt-get install python-dev`
 
 最后，编译真的很久。
