@@ -28,3 +28,15 @@ redcarpet:
     - autolink
     - strikethrough
     - fenced_code_blocks
+
+# preset data
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+# other
+excerpt_separator: "\n\n\n"        
