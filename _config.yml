@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               EVE
-tagline:             'a light life'
+tagline:             'Light on Life'
 description:         '一个技术博客'
 url:                 https://cocoakekeyu.github.io/
 baseurl:             ''
@@ -34,9 +34,10 @@ defaults:
   -
     scope:
       path: "_posts"
-      type: "posts"
+#      type: "posts"
     values:
       layout: "post"
+      category: "unclassified"
 
 # other
 excerpt_separator: "\n\n\n"        

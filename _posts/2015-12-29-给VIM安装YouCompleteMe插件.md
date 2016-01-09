@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 给VIM安装YouCompleteMe插件
-categories: vim
+category: vim
 ---
 
 VIM已有Vundle插件管理，以为安装比较简单，使用vundle安装的。

@@ -1,0 +1,23 @@
+---
+layout: page
+title: 时间线
+---
+
+<div>
+{%for post in site.posts %}
+    {% unless post.next %}
+        <h2>{{ post.date | date: '%Y' }}</h2>
+        <ul>
+    {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+            </ul>
+            <h2 class="page-title">{{ post.date | date: '%Y' }}</h2>
+            <ul>
+        {% endif %}
+    {% endunless %}
+    <li><span>{{ post.date | date: "%b %d" }}</span>» <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>

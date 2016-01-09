@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
 ---
-
-<p class="message">
-一个技术博客
-</p>
+<div class="page">
+    <h1 class="page-title"> 关于本人</h1>
+    <p>没有更多了</p>
