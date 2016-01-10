@@ -3,6 +3,8 @@ layout: page
 title: 书单
 ---
 
+<p class="message">记录下自己读过的书籍</p>
+
 ## 计划：
 - 大宋帝国三百年
 - Effective Java
@@ -35,3 +37,5 @@ title: 书单
 - C和指针 &middot; *Kenneth A.Reek*
 - 密码编码学与网络安全--原理与实践(第三版) &middot; *William Stallings*
 - 盗墓笔记 &middot; *南派三叔*
+
+{% include comment.html %}

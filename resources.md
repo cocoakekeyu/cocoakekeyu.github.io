@@ -18,3 +18,5 @@ title: 资源
 
 ## 书籍
 - [Dive Into Python](http://www.diveintopython.net/toc/index.html)
+
+{% include comment.html %}

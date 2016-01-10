@@ -33,7 +33,7 @@ redcarpet:
 defaults:
   -
     scope:
-      path: "_posts"
+#     path: "_posts"
       type: "post"
     values:
       layout: "post"
