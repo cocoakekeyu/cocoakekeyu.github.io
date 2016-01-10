@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 时间线
+title: 归档
 ---
 
 <div>
