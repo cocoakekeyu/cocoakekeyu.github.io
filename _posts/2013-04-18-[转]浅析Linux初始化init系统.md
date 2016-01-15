@@ -1,4 +1,5 @@
 ---
+category: Linux
 ---
 
 当发现自己使用的Ubuntu并不是使用init程序读取/etc/inittab文件来启动时，便开始去寻找它究竟是什么样的方式。原来Ubuntu从6.0开始便使用upstart方式启动系统，网上有多种介绍Ubuntu启动的各种文章，但大多讲的比较单一。这个是从IBM developwork转贴过来的，从Linux启动系统历史说起，经历了sysvinit、upstart、systemd三个时代。
