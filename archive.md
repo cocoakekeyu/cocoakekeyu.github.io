@@ -13,7 +13,7 @@ title: 归档
         {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
             </ul>
-            <h2 class="page-title">{{ post.date | date: '%Y' }}</h2>
+            <h2>{{ post.date | date: '%Y' }}</h2>
             <ul>
         {% endif %}
     {% endunless %}

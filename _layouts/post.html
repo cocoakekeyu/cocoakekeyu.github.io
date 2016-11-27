@@ -4,7 +4,19 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date:"%Y-%m-%d" }}</span>
+  <ul class="post-meta">
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <span>{{ page.date | date:"%Y-%m-%d" }}</span>
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        <span>{{page.categories}}</span>
+        {% if page.tags != empty %}
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        <span>{{page.tags}}</span>
+        {% endif %}
+        <span>字数:
+            {{ content | strip_html | strip_newlines | size }}
+        </span>
+ </ul>
   {{ content }}
 </div>
 
