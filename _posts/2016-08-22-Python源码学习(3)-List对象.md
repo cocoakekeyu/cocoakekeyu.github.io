@@ -6,20 +6,21 @@ category: Python
 
 ### 定义
 
-```
-
+```c
 typedef struct {
 	PyObject_VAR_HEAD
 	PyObject **ob_item;  	//ob_item为指向元素列表的指针，list[0]即是ob_item[0]
 	int allocated;  //当前为List申请的内存元素个数
 };
-
 ```
+
+`ob_size`记录的是list对象实际装的元素个数，`allocated`记录了当前list对象向系统申请的总内存大小（元素个数），一般来说，`allocated`>=`ob_size`。
+
+例如，一个list对象内容纳10个元素，已经装入了5个，则allocated=10, ob_size=5。
 
 ### 创建对象
 
 ```c
-
 PyObject * PyList_New(int size){
 	PyListObject *op;
 	size_t nbytes;
@@ -62,7 +63,6 @@ PyObject * PyList_New(int size){
 `num_free_lists`作为缓冲池数组的指针，初始为0。虚拟机创建第一个PyListObject时并不会使用。当删除一个PyListObject对象时检查`free_lists`数组有没有填满PyListObject指针，如果没有达到最大值，就将当前的对象赋值给`free_lists[num_free_lists]`，并将num_free_lists加1。
 
 ```c
-
 #define MAXFREELISTS 80
 static PyListObject *free_lists[MAXFREELISTS];
 static int num_free_lists=0;
@@ -72,7 +72,11 @@ static int num_free_lists=0;
 
 ### 调整list列表容量
 
-```
+list列表的插入和append操作均有可能存在原有list对象的分配的内存已满情况，此时需通过`list_resize`函数重新调整list对象的容量。
+
+除此之外，删除操作也可能会导致`list_resize`操作，python尽可能将list对象所占用的内存保持最小。
+
+```c
 static int list_resize(PyListObject * self, int newsize){
 	PyObject **item;
 	int allocated = self->allocated;
@@ -95,3 +99,6 @@ static int list_resize(PyListObject * self, int newsize){
 	return 0;
 }
 ```
+
+
+### list对象销毁
