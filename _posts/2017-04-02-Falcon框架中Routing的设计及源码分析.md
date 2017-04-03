@@ -54,7 +54,7 @@ app变量是一个WSGI应用的入口，通过方法`add_route`添加了一个`/
 
 `{thing1}`中的URL值将被Falcon赋值给`thing1`变量并传替到方法的参数中。
 
-在Falcon内部，其实是使用树型结构保存URL映射。所有添加的路由URL将组织成一棵棵的树，每个树的节点是URL的每个片段，如`foo`或者`all`，只有树的叶子对应到资源方法对象。
+在Falcon内部，其实是使用树型结构保存URL映射。所有添加的路由URL将组织成一棵棵的树，每个树的节点是URL的每个片段，如`foo`或者`all`。
 
 下面逐步分析Falcon如何实现URL树以及URL的匹配查找。
 
@@ -122,7 +122,7 @@ def add_route(self, uri_template, method_map, resource):
     # path保存URL分离后的片段字符串
     path = uri_template.strip('/').split('/')
 
-    # 一个内部函数insert，遍历树，并建立树叶节点。nodes为保存'CompiledRouterNode'类的列表
+    # 一个内部函数insert，遍历树，并建立树节点。nodes为保存'CompiledRouterNode'类的列表
     def insert(nodes, path_index=0):
         for node in nodes:
             segment = path[path_index]
@@ -155,7 +155,7 @@ def add_route(self, uri_template, method_map, resource):
     self._find = self._compile()
 ```
 
-`add_route`方法会分析所给的URL字符, 通过递归调用`insert`方法，找到需要新增的节点，如果是树叶节点（即URL最后一部分），则设置`uri_template, method_map, resource`，最后的`self._find = self._compile()`会进行查找方法的预编译。既是说，每添加一个URL路由，就进行一次查找方法的预编译。
+`add_route`方法会分析所给的URL字符, 通过递归调用`insert`方法，找到需要新增的节点，如果是URL最后一部分，则设置`uri_template, method_map, resource`，最后的`self._find = self._compile()`会进行查找方法的预编译。既是说，每添加一个URL路由，就进行一次查找方法的预编译。
 
 看看这个预编译的魔法是什么。前面已经说了，Falcon框架的router类要实现两个方法`add_route`和`find`，`find`方法查找给予的URL并返回最终调用的资源类和方法。
 
