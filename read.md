@@ -5,11 +5,27 @@ title: 书单
 
 <p class="message">记录下自己读过的书籍</p>
 
-## 计划：
-暂无
 
-## 在读：
-- 分身 &middot; *东野圭吾*
+## 2017读书
+
+- Linux系统编程
+- Linux系统内核设计与实现 （已买）
+- 重构，改变既有代码的设计（已买）
+- UPN（已买）
+- APUE（已买）
+- 中国近代史（一直在读）
+- 当下的力量（在读）
+- 金色梦乡 （已读）
+- 杀死一只知更鸟（已下载）
+- 批判性思维（已下载）
+- Code Complete（在读）
+- 巨人的陨落（已下载）
+- Go入门指南（在读）
+- 史记（已下载）
+- 傲慢与偏见（已下载）
+- 过于喧闹的孤独（已下载）
+- the goldfinch（已下载）
+- 奥杜邦的祈祷
 
 ## 已读的书：
 ### 2016年
@@ -18,7 +34,7 @@ title: 书单
 - [秦崩：从秦始皇到刘邦的秘密 &middot; *李开元*](https://book.douban.com/subject/26368070/)
 - [拖拉一点也无妨 &middot; *约翰·佩里*](https://book.douban.com/subject/24839553/)
 - [影响力 &middot; *罗伯特·西奥迪尼*](https://book.douban.com/subject/1786387/)
-- 东野圭吾老师的作品(一部小心就陷进去):
+- 东野圭吾老师的作品(一不小心就陷进去):
     - [解忧杂货店](https://book.douban.com/subject/25862578/)
     - 秘密
     - 白夜行
@@ -29,6 +45,7 @@ title: 书单
     - 恶意
     - 宿命
     - 侦探伽利略系列
+    - 分身 &middot; *东野圭吾*
 
 ### 2015年
 - [精通正则表达式 &middot; *Jeffrey Friedl*](https://book.douban.com/subject/2154713/)
