@@ -106,7 +106,7 @@ A highly specialized operation that let you mix and match the database (schema-c
 It accepts two list of operations, and when asked to apply state will use the state list, and when asked to apply changes to the database will use the database list. Do not use this operation unless you’re very sure you know what you’re doing.
 
 ```
-即数据库操作与声明操作可以不一样。 把上面生成的migration文件中creatmodel的操作放到SeparateDatabaseAndStae类的state_operations饭方法，如下：
+即数据库操作与声明操作可以不一样。 把上面生成的migration文件中creatmodel的操作放到SeparateDatabaseAndStae类的state_operations方法，如下：
 
 ```python
 operations = [
