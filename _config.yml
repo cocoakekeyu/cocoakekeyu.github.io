@@ -38,6 +38,7 @@ defaults:
     values:
       layout: "post"
       category: "unclassified"
+      comments: true
 
 # other
 excerpt_separator: "\n\n\n"
