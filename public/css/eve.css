@@ -1,3 +1,9 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .post-title, .page-title, .post-title a{
 	color: #3d4657;
    	text-align: center;
@@ -10,3 +16,10 @@
     padding: 4px 8px;
 }
 
+code {
+    padding: .25em 0.25em;
+    font-size: 95%;
+    color: #353a3d;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
