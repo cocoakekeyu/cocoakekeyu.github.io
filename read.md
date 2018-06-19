@@ -6,37 +6,50 @@ title: 书单
 <p class="message">记录下自己读过的书籍</p>
 
 
-## 2017读书清单
+## 计划中
 
-- Linux系统编程
-- Linux系统内核设计与实现
-- 重构，改变既有代码的设计
-- UNP
-- APUE
 - 中国近代史
-- 当下的力量（已读）
-- 金色梦乡（已读）
-- 批判性思维（已读）
-- Fluent python(已读)
-- 艾伦图灵传
 - 杀死一只知更鸟
-- Code Complete
-- 巨人的陨落
-- Go入门指南
 - 史记
 - 傲慢与偏见
 - 过于喧闹的孤独
 - the goldfinch
 - 奥杜邦的祈祷
+- Linux系统编程
+- Linux系统内核设计与实现
+- 重构，改变既有代码的设计
+- Code Complete
+- High Performance Brower Networking
+- Systems Performance Enterprise
 
 ## 已读的书：
+### 2018年
+- Redis设计与实现
+- Redis实战
+- Ansible up and run
+- SQL Performance Explained
+- 高性能MySQL
+
+### 2017年
+- 巨人的陨落
+- 当下的力量
+- 金色梦乡
+- 批判性思维
+- 艾伦图灵传
+- Go入门指南
+- Fluent python
+- Python Cookbook 2rd
+- UNIX环境高级编程(APUE)
+- UNIX Network Programming(UNP)
+- The Ruby Programming Language
+
 ### 2016年
 - [三体 &middot; *刘慈欣*](https://book.douban.com/subject/6518605/)
 - [秦谜 &middot; *李开元*](https://book.douban.com/subject/5393687/)
 - [秦崩：从秦始皇到刘邦的秘密 &middot; *李开元*](https://book.douban.com/subject/26368070/)
 - [拖拉一点也无妨 &middot; *约翰·佩里*](https://book.douban.com/subject/24839553/)
 - [影响力 &middot; *罗伯特·西奥迪尼*](https://book.douban.com/subject/1786387/)
-- 东野圭吾老师的作品(一不小心就陷进去):
+- 东野圭吾作品:
     - [解忧杂货店](https://book.douban.com/subject/25862578/)
     - 秘密
     - 白夜行
