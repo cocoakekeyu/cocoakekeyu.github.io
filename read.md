@@ -28,7 +28,11 @@ title: 书单
 - Redis实战
 - Ansible up and run
 - SQL Performance Explained
+- Python Cookbook 3rd
 - 高性能MySQL
+- RabbitMQ实战-高效部署分布式消息队列
+- Elasticsearch权威指南
+- 白帽子讲Web安全
 
 ### 2017年
 - 巨人的陨落
@@ -37,6 +41,7 @@ title: 书单
 - 批判性思维
 - 艾伦图灵传
 - Go入门指南
+- HTTP权威指南
 - Fluent python
 - Python Cookbook 2rd
 - UNIX环境高级编程(APUE)
